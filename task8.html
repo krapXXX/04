@@ -9,29 +9,34 @@
         .Block
         {
             background: rgb(167, 245, 225);
-            height:30px;
+            height:40px;
         }
         .Word
         {
             border-top: none; 
-            border-right: none; 
+            border-left: none; 
             border-bottom: none; 
-            border-left: 4px solid rgb(0, 0, 0);
+            border-right: 4px solid rgb(0, 0, 0);
         }
         .inCenter
         {
             padding-Top: 4px;
             padding-Left: 20px;
-            font-size: 23px;
+            font-size: 32px;
         }
-        
+        .inline
+        {
+            display: inline-block;
+        }
     </style>
 <body>
     <div>
-    <span class = "Block Word inCenter">Home</span>
-    <span class = "Block Word inCenter">Gallery</span>
-    <span class = "Block Word inCenter">About</span>
-    <span class = "Block Word inCenter">Contacts</span>
+        <div class = "Block">
+    <div class = " Word inCenter inline">Home</div>
+    <div class = " Word inCenter inline">Gallery</div>
+    <div class = " Word inCenter inline">About</div>
+    <div class = " Word inCenter inline">Contacts</div>
     </div>
+</div>
 </body>
 </html>
